@@ -18,10 +18,10 @@ public class AOSAndroidAppiumTest {
 
     @Before
     public void setup(){
-        // Global vars for setup
-        String MC_SERVER = "http://hpmc2.globalepps.com:8080";      // PS MC lab
-        String MC_SERVER_USER = "shahar.shiff@hpe.com";
-        String MC_SERVER_PASSWORD = "Password1";
+        /* Global vars for setup */
+        String MC_SERVER = "";          // Your MC server
+        String MC_SERVER_USER = "";     // Your MC user name
+        String MC_SERVER_PASSWORD = ""; // Your MC password
         String APP_PACKAGE = "com.Advantage.aShopping";
         String APP_ACTIVITY = "com.Advantage.aShopping.SplashActivity";
 
@@ -31,7 +31,7 @@ public class AOSAndroidAppiumTest {
 
             // Set device capabilities
             capabilities.setCapability("platformName", "Android");
-            capabilities.setCapability("deviceName", "Nexus 7");
+            //capabilities.setCapability("deviceName", "Nexus 7");
             capabilities.setCapability("platformVersion", ">6.0.0");
 
             // Application capabilities
