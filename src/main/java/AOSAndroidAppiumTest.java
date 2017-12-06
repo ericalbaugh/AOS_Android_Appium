@@ -19,9 +19,9 @@ public class AOSAndroidAppiumTest {
     @Before
     public void setup(){
         /* Global vars for setup */
-        String MC_SERVER = "";          // Your MC server
-        String MC_SERVER_USER = "";     // Your MC user name
-        String MC_SERVER_PASSWORD = ""; // Your MC password
+        String MC_SERVER = "http://demo.mobilecenter.io:8080";          // Your MC server
+        String MC_SERVER_USER = "eric.albaugh@hpe.com";     // Your MC user name
+        String MC_SERVER_PASSWORD = "Password1"; // Your MC password
         String APP_PACKAGE = "com.Advantage.aShopping";
         String APP_ACTIVITY = "com.Advantage.aShopping.SplashActivity";
 
