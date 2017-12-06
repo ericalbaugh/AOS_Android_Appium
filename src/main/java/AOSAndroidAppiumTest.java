@@ -65,7 +65,7 @@ public class AOSAndroidAppiumTest {
     }
 
     @Test
-    public void runTest() {
+    public void appiumTest() {
         if (!noProblem) return;
         try {
             logMessages("Device in use: " + driver.getCapabilities().getCapability("deviceName").toString() +
@@ -102,7 +102,7 @@ public class AOSAndroidAppiumTest {
                     "android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.support.v4.widget.DrawerLayout[1]/" +
                     "android.view.ViewGroup[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/" +
                     "android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]");
-            //element.click();
+            element.click();
 
             logMessages("Select laptop", LOG_LEVEL.INFO);
             element = driver.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/" +
