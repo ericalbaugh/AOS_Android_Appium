@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.WebElement;
 import io.appium.java_client.android.AndroidDriver;
+import sun.misc.BASE64Encoder;
 
 
 public class AOSAndroidAppiumTest {
@@ -101,7 +102,7 @@ public class AOSAndroidAppiumTest {
                     "android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.support.v4.widget.DrawerLayout[1]/" +
                     "android.view.ViewGroup[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout[1]/" +
                     "android.support.v7.widget.RecyclerView[1]/android.widget.RelativeLayout[1]/android.widget.ImageView[1]");
-            element.click();
+            //element.click();
 
             logMessages("Select laptop", LOG_LEVEL.INFO);
             element = driver.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/" +
