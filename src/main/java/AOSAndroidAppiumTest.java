@@ -20,8 +20,8 @@ public class AOSAndroidAppiumTest {
     @Before
     public void setup(){
         /* Global vars for setup */
-        String MC_SERVER = "http://demo.mobilecenter.io:8080";          // Your MC server
-        String MC_SERVER_USER = "eric.albaugh@hpe.com";     // Your MC user name
+        String MC_SERVER = "http://nimbusserver:8084";          // Your MC server
+        String MC_SERVER_USER = "admin@default.com";     // Your MC user name
         String MC_SERVER_PASSWORD = "Password1"; // Your MC password
         String APP_PACKAGE = "com.Advantage.aShopping";
         String APP_ACTIVITY = "com.Advantage.aShopping.SplashActivity";
@@ -31,9 +31,9 @@ public class AOSAndroidAppiumTest {
             DesiredCapabilities capabilities = new DesiredCapabilities();
 
             // Set device capabilities
-            capabilities.setCapability("platformName", "Android");
-            //capabilities.setCapability("deviceName", "Nexus 7");
-            capabilities.setCapability("platformVersion", ">6.0.0");
+            //capabilities.setCapability("platformName", "Android");
+            capabilities.setCapability("deviceName", "Nexus 7");
+            //capabilities.setCapability("platformVersion", ">6.0.0");
 
             // Application capabilities
             capabilities.setCapability("appPackage", APP_PACKAGE);
@@ -84,7 +84,7 @@ public class AOSAndroidAppiumTest {
             element = driver.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/" +
                     "android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/" +
                     "android.widget.LinearLayout[2]/android.widget.RelativeLayout[3]/android.widget.EditText[1]");
-            element.sendKeys("Shahar");
+            element.sendKeys("ericalbaugh");
 
             logMessages("Set password", LOG_LEVEL.INFO);
             element = driver.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/" +
